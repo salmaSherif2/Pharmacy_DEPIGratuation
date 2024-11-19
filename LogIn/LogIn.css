@@ -1,0 +1,66 @@
+@font-face {
+    font-family: drugs-font;
+    src: url('drugs/Drugs.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'drugs-font';
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    width: 15rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(181, 181, 181);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    width: 14rem;
+    border: 1px solid rgb(4, 4, 64);
+    background-color: aliceblue;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 50px;
+    outline: none;
+    color: rgb(48, 47, 47);
+    margin-top: 2rem;
+}
+
+button {
+    width: 5rem;
+    margin-top: 4rem;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(4, 4, 64);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 4, 133);
+}

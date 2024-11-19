@@ -1,0 +1,270 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+body.dark {
+    background-color: #375a82;
+    color: aliceblue;
+}
+
+body.dark nav,
+body.dark button {
+    background-color: #1d3c5f;
+}
+
+body nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #3878c0;
+    width: 100%;
+    height: 5rem;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    z-index: 111111;
+    padding-right: 3rem;
+}
+
+body nav span img {
+    width: 3rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+body nav p {
+    margin: 0;
+    padding: 0;
+}
+
+body nav button {
+    background-color: #3878c0;
+    border: none;
+    color: aliceblue;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.container {
+    padding-top: 5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #3878c0;
+} 
+body.dark h2 {
+    color: aliceblue;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    width: 20%;
+}
+
+th {
+    background-color: #3878c0;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+body.dark th {
+    border: 1px solid #1d3c5f;
+}
+
+body.dark td {
+    color: #1d3c5f;
+}
+
+body.dark th {
+    background-color: #1d3c5f;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-sidebar h3 {
+    text-align: center;
+    color: #3878c0;
+    margin-bottom: 5rem;
+}
+
+.cart-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-sidebar li {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1d3c5f;
+}
+
+.cart-sidebar .close-cart {
+    background-color: #3878c0;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cart-sidebar button.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    background-color: #3878c0;
+    color: aliceblue;
+    padding: 0.5rem;
+    border: 0.5px solid aliceblue;
+    border-radius: 10px;
+}
+.add-to-cart:hover{
+    box-shadow: 0 0 35px #034694;
+    border: none;
+}
+
+
+body.dark .add-to-cart {
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border: 0.5px solid #3878c0;
+    color: #1d3c5f;
+    border-radius: 10px;
+}
+body.dark .add-to-cart:hover{
+    color: aliceblue;
+    background-color: #1d3c5f;
+    box-shadow: 0 0 35px #034694;
+
+}
+
+body.dark .cart-sidebar {
+    background-color: #375a82;
+}
+
+body.dark .cart-sidebar h3 {
+    color: aliceblue;
+}
+
+body.dark .cart-sidebar li {
+    color: aliceblue;
+}
+
+body.dark .close-cart {
+    background-color: #1d3c5f;
+    border-radius: 10px;
+}
+
+.cart-sidebar button.quantity-btn {
+    background-color: #3878c0;
+    color: aliceblue;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+body.dark .quantity-btn {
+    background-color: aliceblue;
+    color: #1d3c5f;
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-block: 50px;
+    margin-top: 6rem;
+}
+.search input{
+    position: absolute;
+    outline: none;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 30px;
+    margin-inline:auto;
+    line-height: 45px;
+    border-radius: 10px;
+    border: 4px solid #3878c0;
+    background-color: transparent;
+    color: #1d3c5f;
+}
+body.dark .search input{
+    color: aliceblue;
+}
+.labelline{
+    position: absolute;
+    font-size: 1rem;
+    color: #3878c0;
+    padding: 025px;
+    transition: .1s ease;
+    background-color:  aliceblue;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    transform:translate(24px,-24px) scale(0.88);
+  
+}
+body.dark .labelline{
+    background-color: #375a82  ;
+    color:aliceblue;
+}

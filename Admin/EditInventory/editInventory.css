@@ -1,0 +1,265 @@
+
+@font-face {
+    font-family: drugs-font;
+    src: url('/drugs/Drugs.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'drugs-font';
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+body.dark {
+  
+    background-color: #375a82;
+    color: aliceblue;
+}
+
+h2 {
+    color: #3878c0;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+
+body nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #3878c0;
+    width: 100%;
+    height: 5rem;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding-right: 3rem;
+}
+
+body nav span img {
+    width: 3rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+body nav p {
+    margin: 0;
+    padding: 0;
+}
+
+body nav button {
+    background-color: #3878c0;
+    border: none;
+    color: aliceblue;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+label {
+    color: #3878c0;
+}
+
+body.dark nav,
+body.dark button {
+    background-color: #1d3c5f;
+}
+
+.buttons {
+    color: aliceblue;
+    background: #3878c0;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-block-start: 8px;
+    cursor: pointer;
+}
+.buttons:hover{
+    box-shadow: 0 0 15px #034694;
+    letter-spacing: 0.1rem;
+
+
+}
+
+
+body.dark .buttons {
+    background-color: aliceblue;
+    color: #034694;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-block-start: 20px;
+    cursor: pointer;
+}
+body.dark.buttons :hover{
+
+    box-shadow: 0 0 35px aliceblue;
+    letter-spacing: 0.1rem;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-block: 50px;
+    margin-top: 6rem;
+}
+.search input{
+    position: absolute;
+    outline: none;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 30px;
+    margin-inline:auto;
+    line-height: 45px;
+    border-radius: 10px;
+    border: 4px solid #3878c0;
+    background-color: transparent;
+    color: #1d3c5f;
+}
+body.dark .search input{
+    color: aliceblue;
+}
+.labelline{
+    position: absolute;
+    font-size: 1rem;
+    color: #3878c0;
+    padding: 025px;
+    transition: .1s ease;
+    background-color:  aliceblue;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    transform:translate(24px,-24px) scale(0.88);
+}
+body.dark .labelline{
+    background-color: #375a82  ;
+    color:aliceblue;
+}
+
+
+body.dark h2 {
+    color: aliceblue;
+}
+
+body.dark .inputs {
+    border: 4px solid  aliceblue ;
+}
+
+body.dark label {
+    color: aliceblue;
+}
+body.dark .search input{
+    border: 4px solid #3878c0;
+}
+
+
+th,
+td {
+    border: 1px solid #3878c0;
+    padding: 8px;
+    width: 20%;
+}
+
+body.dark th {
+    background-color: #1d3c5f;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+th {
+    background-color: #3878c0;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #034694;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    font-size: 18px;
+    box-shadow: 0 0 35px #034694;
+    background-color: aliceblue;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-block: 50px;
+}
+
+.search input {
+    outline: none;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 10px;
+    border: 4px solid #3878c0;
+    background-color: transparent;
+    transition: 0.1s ease;
+}
+
+
+
+.inputs {
+    border: 4px solid #3878c0;
+    border-radius: 10px;
+    padding: 6%;
+}
+li{
+    list-style: none;
+} 
+body.dark li {
+    color: #034694;
+
+
+}
+.ico {
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+  }
+  
+  .cat {
+    border-radius: 0.75rem;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Initially hidden */
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 10;
+  }
+  
+  .cat li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .cat li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  i {
+    cursor: pointer;
+  }

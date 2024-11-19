@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetika Pharmacy - Edit Inventory</title>
+    <link rel="stylesheet" href="/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="editInventory.css">
+</head>
+
+<body>
+    <nav>
+        <span id="gender-icon"></span>
+        <p id="username"></p>
+        <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+        <button id="sign-out"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+    </nav>
+    <div class="container mt-5">
+      
+        <div class="w-75 mx-auto p-3 rounded-3 mt-4">
+            <h2>Edit Inventory </h2>
+            <div class="inputs">
+                <label for="productName" class="mb-2 fw-bold">Product Name:</label>
+                <input type="text" id="productName" class="form-control" required>
+                <div class="alert alert-danger p-2 my-2 d-none " id="nameAlert">write product name </div>
+
+
+                <label for="productCount" class="mb-2 fw-bold">Product Counter:</label>
+                <input type="number" id="productCount" class="form-control" required>
+                <div class="alert alert-danger p-2 my-2 d-none " id="countAlert">write product counter </div>
+
+
+
+                <label for="productPrice" class="mb-2 fw-bold">Product Price:</label>
+                <input type="number" id="productPrice" class="form-control" required>
+                <div class="alert alert-danger p-2 my-2 d-none " id="priceAlert">write product price </div>
+
+
+
+                <label for="productCategory" class="mb-2 fw-bold">Product Category:</label>
+                <input type="text" id="productCategory" class="form-control" required>
+                <div class="alert alert-danger p-2 my-2 d-none " id="categoryAlert">write product category </div>
+
+
+
+
+                <label for="productDesc" class="mb-2 fw-bold">Description:</label>
+                <input type="text" id="productDesc" class="form-control">
+                <button disabled class="buttons" id="addProduct" class="mt-5">Add Product</button>
+                <button class="buttons"id="deleteProduct" class="mt-5" onclick="deleteAllItems()">Delete Form</button>
+                <button class="buttons" id="ShowProduct" class="mt-5"
+                    onclick="window.location.href = '/Admin/DisplayInventory/displayInventory.html'">Show
+                    Product</button>
+            </div>
+            <div class="search">
+                <input id="searchInput" type="text" class="my-3">
+                <div class="font-weight-bold labelline">Search By Name</div>
+            </div>
+            <!-- sort -->
+                      
+        <div class="d-inline-flex align-items-lg-center sort">
+            <ul>
+              <li class="ico">
+                <i class="fa-solid fa-sort" style="color: #3878c0;" id="iFilter"></i>
+                <ul class="cat" >
+                  <li onclick="filter('name')" class="listFilter ">name</li>
+                  <li onclick="filter('price')" class="listFilter ">price</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+            <div class="table-responsive">
+                <table class="table table-bordered mx-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Counter</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryContent"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/Admin/theme.js"></script>
+    <script src="editInventory.js"></script>
+</body>
+
+</html>

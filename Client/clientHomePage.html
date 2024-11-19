@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genetika Pharmacy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="clientHomePage.css">
+
+
+</head>
+
+<body>
+
+    <nav>
+
+        <span id="gender-icon"></span>
+
+        <p id="username"></p>
+
+        <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+
+        <button id="cart-btn" class="cart-btn">
+        
+            <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+        
+        </button>
+
+        <button id="sign-out"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+
+    </nav>
+
+    <div class="container mt-5">
+
+        <h2 class="text-center">Products In Stock</h2>
+
+        <div class="search">
+            <input id="searchInput" type="text" class="my-3">
+            <div class="font-weight-bold labelline">Search By Name</div>
+        </div>
+
+      <div class="table-responsive">
+        <table class="table w-100 mx-auto mt-5">
+
+            <thead>
+
+                <tr>
+
+                    <th style="text-align: center;">Index</th>
+
+                    <th style="text-align: center;">Product Name</th>
+
+
+                    <th style="text-align: center;">Counter</th>
+
+                    <th style="text-align: center;">Product Price</th>
+
+                    <th style="text-align: center;">Category</th>
+
+                    <th style="text-align: center;">Description</th>
+
+                    <th style="text-align: center;">Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="inventoryContent" class="text-center"></tbody>
+
+        </table>
+        </div>
+
+    </div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+
+        <h3>Shopping Cart</h3>
+
+        <ul id="cart-items"></ul>
+
+        <button id="close-cart" class="close-cart">Close</button>
+
+    </div>
+
+    <script src="clientHomePage.js"></script>
+
+</body>
+
+</html>

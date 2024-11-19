@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetika Pharmacy - View Inventory</title>
+    <link rel="stylesheet" href="/bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="displayInventory.css">
+</head>
+
+<body>
+    <nav>
+        <span id="gender-icon"></span>
+        <p id="username"></p>
+        <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+        <button id="sign-out"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+    </nav>
+    <div class="container mt-5">
+        <div class="cart">
+            <h2 class="text-center">Product List</h2>
+        </div>
+        <div class="search">
+            <input id="searchInput" type="text" class="my-3" placeholder="Search By Name">
+        </div>
+        <table class="table table-responsive w-100 mx-auto mt-5">
+            <thead>
+                <tr>
+                    <th style="text-align: center;"></th>
+                    <th style="text-align: center;">Product Name</th>
+                    <th style="text-align: center;">Counter</th>
+                    <th style="text-align: center;">Price</th>
+                    <th style="text-align: center;">Category</th>
+                    <th style="text-align: center;">Description</th>
+                </tr>
+            </thead>
+            <tbody class="text-center mx-auto" id="inventoryContent"></tbody>
+        </table>
+    </div>
+    <script src="/Admin/theme.js"></script>
+    <script src="displayInventory.js"></script>
+</body>
+
+</html>
